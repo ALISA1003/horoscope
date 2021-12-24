@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         day = findViewById(R.id.editText2);
         tv1 = findViewById(R.id.textView1);
         bt_G = findViewById(R.id.button);
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         bt_G.setOnClickListener(new View.OnClickListener() {
             @Override

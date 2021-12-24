@@ -18,8 +18,8 @@ public class HoroApi {
     }
 
     public ModelAnswer getHoro() throws IOException {
-        //String url = "https://aztro.sameerkumar.website/?sign=" + sign + "&day" + day;
-        String url = "https://aztro.sameerkumar.website/?sign=" + "taurus" + "&day" + "today";
+        String url = "https://aztro.sameerkumar.website/?sign=" + sign + "&day" + day;
+        //String url = "https://aztro.sameerkumar.website/?sign=" + "taurus" + "&day" + "today";
         HttpURLConnection connection;
 
         URL u = new URL(url);
